@@ -35,7 +35,7 @@ ydl_opts = {
 }
 
 
-@Client.on_message(command(["song","غنيه","حمل","تحميل","اغنيه", f"song@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["حمل", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 جاري البحث انتظر قليلآ...")
@@ -60,7 +60,7 @@ def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎧 الرافع @{BOT_USERNAME} 👑المالك: @{OWNER_NAME} قناه البوت: @{UPDATES_CHANNEL} **"
+        rep = f"**📤 تم تحميل الفيديو  @jbbbb**" **"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
