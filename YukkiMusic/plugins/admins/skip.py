@@ -27,10 +27,9 @@ from YukkiMusic.utils.thumbnails import gen_thumb
 SKIP_COMMAND = get_command("SKIP_COMMAND")
 
 
-@app.on_message(
+@app.on_message(filters.command("تخطي", [",", ""]) & ~filters.edited)
     filters.command(SKIP_COMMAND)
     & filters.group
-    & ~filters.edited
     & ~BANNED_USERS
 )
 @AdminRightsCheck
