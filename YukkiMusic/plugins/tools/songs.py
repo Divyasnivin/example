@@ -30,7 +30,7 @@ from YukkiMusic.utils.inline.song import song_markup
 SONG_COMMAND = get_command("SONG_COMMAND")
 
 
-@app.on_message(filters.command("بحث", [".", ""]) & ~filters.edited)
+@app.on_message(filters.command("حمل", [".", ""]) & ~filters.edited)
 @language
 async def song_commad_group(client, message: Message, _):
     #await message.delete()
@@ -105,7 +105,7 @@ async def song_commad_group(client, message: Message, _):
 # Song Module
 
 
-@app.on_message(filters.command("بحث", [".", ""]) & ~filters.edited)
+@app.on_message(filters.command("حمل", [".", ""]) & ~filters.edited)
 @language
 async def song_commad_private(client, message: Message, _):
     #await message.delete()
@@ -188,7 +188,7 @@ async def song_helper_cb(client, CallbackQuery, _):
     callback_request = callback_data.split(None, 1)[1]
     stype, vidid = callback_request.split("|")
     try:
-        await CallbackQuery.answer(_["وخر يا ملقوف الطلب مو لك !!"], show_alert=True)
+        await CallbackQuery.answer(_["مو حقك وخر"], show_alert=True)
     except:
         pass
     if stype == "audio":
@@ -343,7 +343,7 @@ async def song_download_cb(client, CallbackQuery, _):
             caption=title,
             thumb=thumb_image_path,
             title=title,
-            performer="𝑴𝒊𝒓𝒂 𝑴𝒖𝒔𝒊𝒄 ♪"
+            performer="RNO"
         )
         await mystic.edit_text(_["song_11"])
         await app.send_chat_action(
