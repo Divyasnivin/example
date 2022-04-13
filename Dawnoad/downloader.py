@@ -54,13 +54,13 @@ ydl_opts = {
 
 }
 
-@Client.on_message(command(["بحث", f"song@{bn}"]) & ~filters.edited)
+@Client.on_message(command(["حمل", f"song@{bn}"]) & ~filters.edited)
 
 def song(_, message):
 
     query = " ".join(message.command[1:])
 
-    m = message.reply("🔎 finding song...")
+    m = message.reply("🔎جاري البحث عن المطلوب  ...")
 
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
 
@@ -84,13 +84,12 @@ def song(_, message):
 
     except Exception as e:
 
-        m.edit("❌ لم اجد شيئا.\n\nاعطني اسم المغني كامل.")
-
+        m.edit("❌ لم يتم العثور على الاغنية\n\nيرجى إعطائي اسم أغنية صالحة")
         print(str(e))
 
         return
 
-    m.edit("📥 downloading file...")
+    m.edit("📥 ثواني ويتحمل الملف ...")
 
     try:
 
@@ -102,7 +101,7 @@ def song(_, message):
 
             ydl.process_info(info_dict)
 
-        rep = f"**🎧 تم التحميل بواسطة @rr8r9**"
+        rep = f"**🎧   ابشرك تحمل الملف **"
 
         secmul, dur, dur_arr = 1, 0, duration.split(":")
 
@@ -112,7 +111,7 @@ def song(_, message):
 
             secmul *= 60
 
-        m.edit("📤 uploading file...")
+        m.edit("📤 ثواني ويتحمل الملف ...")
 
         message.reply_audio(
 
@@ -134,7 +133,7 @@ def song(_, message):
 
     except Exception as e:
 
-        m.edit("❌ error, wait for bot owner to fix")
+        m.edit("❌ حدث خطأ تواصل مع المطور /n/n @jbbbb")
 
         print(e)
 
@@ -150,7 +149,7 @@ def song(_, message):
 
 @Client.on_message(
 
-    command(["ابحثلي", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited
+    command(["فيديو","حمل فيديو", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited
 
 )
 
@@ -204,7 +203,7 @@ async def vsong(client, message):
 
     try:
 
-        msg = await message.reply("📥 **downloading video...**")
+        msg = await message.reply("📥 **ثواني ويتحمل الفيديو ...**")
 
         with YoutubeDL(ydl_opts) as ytdl:
 
@@ -214,11 +213,11 @@ async def vsong(client, message):
 
     except Exception as e:
 
-        return await msg.edit(f"🚫 **error:** {e}")
+        return await msg.edit(f"🚫 **حدث خطأ:** {e}")
 
     preview = wget.download(thumbnail)
 
-    await msg.edit("📤 **uploading video...**")
+    await msg.edit("📤 **ثواني ويتحمل ...**")
 
     await message.reply_video(
 
@@ -242,7 +241,7 @@ async def vsong(client, message):
 
         print(e)
 
-@Client.on_message(command(["كلمات", f"lyric@{bn}"]))
+@Client.on_message(command(["الكلمات","كلمات","كلمات اغنية", f"lyric@{bn}"]))
 
 async def lyrics(_, message):
 
@@ -250,13 +249,13 @@ async def lyrics(_, message):
 
         if len(message.command) < 2:
 
-            await message.reply_text("» **give a lyric name too.**")
+            await message.reply_text("» ** ارسل اسم الاغنية  .**")
 
             return
 
         query = message.text.split(None, 1)[1]
 
-        rep = await message.reply_text("🔎 **searching lyrics...**")
+        rep = await message.reply_text("🔎 **ثواني ابحث عن الكلمات ...**")
 
         resp = requests.get(
 
@@ -270,4 +269,4 @@ async def lyrics(_, message):
 
     except Exception:
 
-        await rep.edit("❌ **results of lyric not found.**\n\n» **please give a valid song name.**")
+        await rep.edit("❌ **مالقيت شي.**\n\n» **عطني اسم أغنية اجنبية فقط.**")
