@@ -40,7 +40,7 @@ answer.extend(
         ),
         InlineQueryResultArticle(
             title="تخطي",
-            description=f"يقوم بتخطي الاغنية الى الي بعدها | اكتب رقم التخطي الي تبيه بعد سكب مثال : /n /skip [number] ",
+            description=f"تخطي الاغنية الي في المكالمة ",
             thumb_url="https://telegra.ph/file/98b88e52bc625903c7a2f.png",
             input_message_content=InputTextMessageContent("/skip"),
         ),
@@ -58,13 +58,13 @@ answer.extend(
         ),
         InlineQueryResultArticle(
             title="تقدم ثواني",
-            description="اكتب عدد الثواني الي تبي تتخطاها .",
+            description="يقدم لك 10 ثواني من الاغنية الي شغالة في المكالمة .",
             thumb_url="https://telegra.ph/file/cd25ec6f046aa8003cfee.png",
             input_message_content=InputTextMessageContent("/seek 10"),
         ),
         InlineQueryResultArticle(
             title="التكرار",
-            description="يقوم بتكرار الموسيقى المشغلةالان. | /nUsage: /loop [enable|disable]",
+            description="يقوم بتكرار الموسيقى الي في المكالمة 3 مرات",
             thumb_url="https://telegra.ph/file/081c20ce2074ea3e9b952.png",
             input_message_content=InputTextMessageContent("/loop 3"),
         ),
