@@ -40,7 +40,7 @@ answer.extend(
         ),
         InlineQueryResultArticle(
             title="تخطي",
-            description=f"يقوم بتخطي الاغنية الى الي بعدها | اكتب رقم التخطي الي تبيه بعد سكب مثال : /skip [number] ",
+            description=f"يقوم بتخطي الاغنية الى الي بعدها | اكتب رقم التخطي الي تبيه بعد سكب مثال : /n /skip [number] ",
             thumb_url="https://telegra.ph/file/98b88e52bc625903c7a2f.png",
             input_message_content=InputTextMessageContent("/skip"),
         ),
@@ -64,7 +64,7 @@ answer.extend(
         ),
         InlineQueryResultArticle(
             title="التكرار",
-            description="يقوم بتكرار الموسيقى المشغلةالان. | Usage: /loop [enable|disable]",
+            description="يقوم بتكرار الموسيقى المشغلةالان. | /nUsage: /loop [enable|disable]",
             thumb_url="https://telegra.ph/file/081c20ce2074ea3e9b952.png",
             input_message_content=InputTextMessageContent("/loop 3"),
         ),
