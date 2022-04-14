@@ -48,13 +48,13 @@ HELP_2 = """✅**اوامر التشغيل:**
 
 /playforce or /vplayforce  \n ▪︎** التشغيل بالقوة**  يوقف الاغنية الي شغالة ويشغل الاغنية الي بحثت عنها بالأمر ويمسح قائمة الانتظار.**
 
-/ربط  [يوزر القناة او ايدي القناة] \n▪︎ لربط القناة بالقروب ويمديك تشغل مم القروب بس لازم ترفع البوت مشرف في القناة وفي القروب وتربطها
+/ربط  [يوزر القناة او ايدي القناة] \n▪︎ لربط القناة بالقروب ويمديك تشغل من القروب بس لازم ترفع البوت مشرف في القناة وفي القروب وتربطها
 
 
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
-/play  - Start playing Your Saved Playlist from Servers."""
+✅**قوائم التشغيل:**
+/قائمتي\n  ▪︎ **لعرض اغانيك المحفوظة في القائمة**.
+/حذف_قائمتي\n ▪︎ Delete any saved music in your playlist
+/play  - **للتشغيل اكتب ** \n /play \n **ثم اضغط على تشغيل القائمة**."""
 
 
 HELP_3 = """✅<u>**Bot Commands:**</u>
