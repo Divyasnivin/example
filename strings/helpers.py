@@ -35,21 +35,20 @@ HELP_1 = """✅**اوامر المشرفين :**
 **/الادمنية  \n▪︎ لكشف ادمنية القروب.**"""
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
+HELP_2 = """✅**اوامر التشغيل:**
 
-Available Commands = play , vplay , cplay
+الاوامر الموجودة = play , vplay 
 
-ForcePlay Commands = playforce , vplayforce , cplayforce
+اوامر القوة = playforce , vplayforce  
 
-**c** stands for channel play.
-**v** stands for video play.
-**force** stands for force play.
+**v** لتشغيل فيديو.
+**force** للتشغيل بالقوة.
 
-/play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
+/play or /vplay  \n ▪︎**للتشغيل اكتب اسم الاغنية بعد الأمر.**
 
-/playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
+/playforce or /vplayforce  \n ▪︎** التشغيل بالقوة**  يوقف الاغنية الي شغالة ويشغل الاغنية الي بحثت عنها بالأمر ويمسح قائمة الانتظار.**
 
-/channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
+/\n▪︎**ربط [يوزر القناة او ايدي القناة] - لربط القناة بالقروب ويمديك تشغل مم القروب بس لازم ترفع البوت مشرف في القناة وفي القروب وتربطها.**
 
 
 ✅**<u>Bot's Server Playlists:</u>**
