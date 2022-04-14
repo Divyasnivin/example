@@ -7,20 +7,20 @@
 #
 # All rights reserved.
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
+HELP_1 = """✅**<u>اوامر المشرفين :</u>**
 
 **c** stands for channel play.
 
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
-/shuffle or /cshuffle- Randomly shuffles the queued playlist.
-/seek or /cseek - Forward Seek the music to your duration
-/seekback or /cseekback - Backward Seek the music to your duration
-/restart - Restart bot for your chat .
+/pause  \n- للإيقاف المؤقت.
+/resume \n - استئناف المؤقت.
+/mute \n كتم لصوت المكالمة.
+/unmute \n إلغاء كتم صوت المكالمة
+/skip \n تخطي الاغنية.
+/stop \n لايقاف التشغيل.
+/shuffle \n  تشغيل عشوائي للي موجود بقائمة التشغيل.
+/seek \n قدم الاغنية بالثواني الي تبيها 
+/seekback \n لاسترجاع الي قدمته بالاغنية
+/restart \n إعادة تشغيل للبوت .
 
 
 ✅<u>**Specific Skip:**</u>
