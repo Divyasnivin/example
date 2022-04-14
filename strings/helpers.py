@@ -61,34 +61,34 @@ HELP_3 = """✅** اوامر القناة:**
 
 لربط القروب بالقناة اول شي ارفع البوت مشرف في القناة وفي القروب ثم ارسل 
 /ربط [معرف القناة]
-مثال: `/ربط@abfm5`
+مثال: ` /ربط @abfm5 `
 
 
-/cplay
+/cplay \n **للتشغيل بالقناة رد على الملف الي تبي تشغله او اكتب اسم الاغنية بعد الأمر**
 
-/cplayforce
+/cplayforce \n**للتشغيل بالقوة في القناة **
 
-/cloop
+/cloop \n لتكرار الاغنية بالقناة واكتب الأمر مع رقم التكرار الحد** 10**
 
-/cseek
+/cseek \n يقدم في الاغنية الي مشغلها بالقناة 10 ثواني****
 
-/cshuffle
+/cshuffle \n يشغل عشوائي قائمة التشغيل
 
-/cskip
+/cskip \n للتخطي بالقناة
 
-/cstop
+/cstop \n لايقاف التشغيل بالقناة****
 
-/cpause - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
+/cpause \n **للايقاف المؤقت بالقناة**
 
-/cresume - Check Sudo Users of Yukki Music Bot
+/cresume \n **لاستئناف التشغيل بالقناة**
 
-/cmute [Music Name] - Searches Lyrics for the particular Music on web.
+/cmute  \n **لكتم الصوت بالمكالمة في القناة**.
 
-/cunmute [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+/cunmute \n إلغاء كتم الصوت بالمكالمة في القناة**.**
 
-/cplayer -  Get a interactive Playing Panel.
+/cplayer \n لعرض قائمة التحكم بالأغاني للقناة****.
 
-/cqueue- Check Queue List of Music."""
+/cqueue \n لعرض قائمة التشغيل بالقناة** **."""
 
 HELP_4 = """✅<u>**Extra  Commands:**</u>
 /start - Start the Music Bot.
