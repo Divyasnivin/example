@@ -38,9 +38,9 @@ LYRICS_COMMAND : ["lyrics"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["auth"]
-UNAUTH_COMMAND : ["unauth"]
-AUTHUSERS_COMMAND : ["authusers"]
+AUTH_COMMAND : ["ادمن"]
+UNAUTH_COMMAND : ["تنزيل_ادمن"]
+AUTHUSERS_COMMAND : ["الادمنية"]
 PAUSE_COMMAND : ["pause", "cpause"]
 RESUME_COMMAND : ["resume", "cresume"]
 MUTE_COMMAND : ["mute", "cmute"]
