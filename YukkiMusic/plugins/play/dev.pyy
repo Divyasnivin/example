@@ -1,8 +1,0 @@
-else:
-        buttons = [
-            (
-                Button.url("قناة السورس", "t.me/JMTHON"),
-                Button.url(
-                    "المطور",
-                    "t.me/RR7PP",
-                ),
