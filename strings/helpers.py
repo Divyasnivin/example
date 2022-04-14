@@ -52,26 +52,43 @@ HELP_2 = """✅**اوامر التشغيل:**
 
 
 ✅قائمة التشغيل**:**
-/قائمتي \n\n  ▪︎ لعرض اغانيك المحفوظة في القائمة****.
-/حذف_قائمتي \n\n ▪︎ لحذف اغانيك المحفوظة بالقائمة****
+/قائمتي \n ▪︎ لعرض اغانيك المحفوظة في القائمة****.
+/حذف_قائمتي \n ▪︎ لحذف اغانيك المحفوظة بالقائمة****
 /play  \n\n للتشغيل اكتب الأمر الذي في الأعلى ^ \n ثم اضغط على تشغيل القائمة****."""
 
 
-HELP_3 = """✅<u>**Bot Commands:**</u>
+HELP_3 = """✅** اوامر القناة:**
 
-/stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
+لربط القروب بالقناة اول شي ارفع البوت مشرف في القناة وفي القروب ثم ارسل 
+/ربط [معرف القناة]
+مثال: `/ربط@abfm5`
 
-/sudolist - Check Sudo Users of Yukki Music Bot
 
-/lyrics [Music Name] - Searches Lyrics for the particular Music on web.
+/cplay
 
-/song [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+/cplayforce
 
-/player -  Get a interactive Playing Panel.
+/cloop
 
-**c** stands for channel play.
+/cseek
 
-/queue or /cqueue- Check Queue List of Music."""
+/cshuffle
+
+/cskip
+
+/cstop
+
+/cpause - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
+
+/cresume - Check Sudo Users of Yukki Music Bot
+
+/cmute [Music Name] - Searches Lyrics for the particular Music on web.
+
+/cunmute [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+
+/cplayer -  Get a interactive Playing Panel.
+
+/cqueue- Check Queue List of Music."""
 
 HELP_4 = """✅<u>**Extra  Commands:**</u>
 /start - Start the Music Bot.
