@@ -35,21 +35,21 @@ async def maintenance(client, message: Message):
     message.chat.id
     state = message.text.split(None, 1)[1].strip()
     state = state.lower()
-    if state == "enable":
+    if state == "تفعيل":
         if await is_maintenance() is False:
             await message.reply_text(
-                "Maintenance mode is already enabled"
+                "تم تفعيل وضع الصيانة"
             )
         else:
             await maintenance_on()
             await message.reply_text(_["maint_2"])
-    elif state == "disable":
+    elif state == "تعطيل":
         if await is_maintenance() is False:
             await maintenance_off()
             await message.reply_text(_["maint_3"])
         else:
             await message.reply_text(
-                "Maintenance mode is already disabled"
+                "تم تعطيل وضع الصيانة"
             )
     else:
         await message.reply_text(usage)
