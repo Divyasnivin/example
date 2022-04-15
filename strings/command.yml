@@ -38,7 +38,7 @@ LYRICS_COMMAND : ["lyrics"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["ادمن"]
+AUTH_COMMAND : ["رفع_ادمن"]
 UNAUTH_COMMAND : ["تنزيل_ادمن"]
 AUTHUSERS_COMMAND : ["الادمنية"]
 PAUSE_COMMAND : ["pause", "cpause"]
