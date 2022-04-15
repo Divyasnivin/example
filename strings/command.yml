@@ -17,7 +17,7 @@ HELP_COMMAND : ["help", "الاوامر"]
 SETTINGS_COMMAND : ["تحكم", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
-STATS_COMMAND : ["حصة"]
+STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
@@ -60,12 +60,12 @@ DELSUDO_COMMAND : ["تنزيل_مطور"]
 SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["broadcast"]
+BROADCAST_COMMAND : ["اذاعة"]
 
 #Blacklist chat
-BLACKLISTCHAT_COMMAND : ["blacklistchat"]
-WHITELISTCHAT_COMMAND : ["whitelistchat"]
-BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
+BLACKLISTCHAT_COMMAND : ["سوداء"]
+WHITELISTCHAT_COMMAND : ["بيضاء"]
+BLACKLISTEDCHAT_COMMAND : ["القائمة_السوداء"]
 
 # Video Calls Command
 VIDEOLIMIT_COMMAND : ["set_video_limit"]
@@ -80,7 +80,7 @@ GETLOG_COMMAND : ["get_log"]
 GETVAR_COMMAND : ["get_var"]
 DELVAR_COMMAND : ["del_var"]
 SETVAR_COMMAND : ["set_var"]
-USAGE_COMMAND : ["usage"]
+USAGE_COMMAND : ["الاستخدام"]
 VARS_COMMAND : ["vars", "config"]
 
 
@@ -95,9 +95,9 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["block"]
-UNBLOCK_COMMAND : ["unblock"]
-BLOCKED_COMMAND : ["blockedusers"]
+BLOCK_COMMAND : ["بلوك"]
+UNBLOCK_COMMAND : ["رفع_البلوك"]
+BLOCKED_COMMAND : ["المبلكين"]
 
 #sPEEDTEST
 SPEEDTEST_COMMAND : ["السرعة"]
@@ -107,6 +107,6 @@ ACTIVEVC_COMMAND : ["النشطة"]
 ACTIVEVIDEO_COMMAND : ["activevideo"]
 
 #Gban Commands
-GBAN_COMMAND : ["gban"]
-UNGBAN_COMMAND : ["ungban"]
-GBANNED_COMMAND : ["gbannedusers"]
+GBAN_COMMAND : ["حظر"]
+UNGBAN_COMMAND : ["الغاء_الحظر"]
+GBANNED_COMMAND : ["المحظورين"]
