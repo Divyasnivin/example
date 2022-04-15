@@ -48,7 +48,7 @@ UNMUTE_COMMAND : ["unmute", "cunmute"]
 STOP_COMMAND : ["stop", "end", "cstop", "cend"]
 SKIP_COMMAND : ["skip", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
+LOOP_COMMAND : ["تكرار", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
@@ -72,8 +72,8 @@ VIDEOLIMIT_COMMAND : ["set_video_limit"]
 VIDEOMODE_COMMAND : ["videomode"]
 
 #Mantenance
-MAINTENANCE_COMMAND : ["maintenance"]
-LOGGER_COMMAND : ["logger"]
+MAINTENANCE_COMMAND : ["الصيانة"]
+LOGGER_COMMAND : ["التسجيل"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
@@ -87,7 +87,7 @@ VARS_COMMAND : ["vars", "config"]
 #Basic Bot Commands
 UPDATE_COMMAND : ["تحديث"]
 REBOOT_COMMAND : ["reboot"]
-AUTOEND_COMMAND : ["autoend"]
+AUTOEND_COMMAND : ["تلقائي"]
 
 #Private Bot Mode
 AUTHORIZE_COMMAND : ["authorize"]
