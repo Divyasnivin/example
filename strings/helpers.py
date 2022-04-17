@@ -96,34 +96,33 @@ HELP_4 = """✅** اوامر اضافية:**
 /المطورين \n لعرض مطورين البوت المطورين """
 
 HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
-/addsudo [Username or Reply to a user]
-/delsudo [Username or Reply to a user]
+/اضف_مطور [اسم المستخدم]
+/delsudo [اسم المستخدم]
 
-🛃**<u>HEROKU:</u>**
-/usage - Dyno Usage.
+🛃**<u>هيروكو:</u>**
+/الاستخدام - المعدل.
 
-🌐**<u>CONFIG VARS:</u>**
-/get_var - Get a config var from Heroku or .env.
-/del_var - Delete any var on Heroku or .env.
-/set_var [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+🌐**الفارات**
+/get_var - للحصول على الفأرة
+/del_var - لحذف الفأرة
+/set_var [اسم الفأرة] [الرقم] - قم بتعيين Var أو تحديث Var على heroku أو .env. منفصلة Var وقيمتها بمسافة.
 
-🤖**<u>BOT COMMANDS:</u>**
-/reboot - Reboot your Bot. 
-/update - Update Bot.
-/speedtest - Check server speeds
-/maintenance [enable / disable] 
-/logger [enable / disable] - Bot logs the searched queries in logger group.
-/get_log [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
-/autoend [enable|disable] - Enable Auto stream end after 3 mins if no one is listening.
+🤖**<u>اوامر البوت:</u>**
+/reboot - لاعادة تشغيل بوتك 
+/تحديث - لتحديث البوت.
+/السرعة - لقياس سرعة السيرفر
+/الصيانة [تفعيل / تعطيل] 
+/التسجيل [تفعيل / تعطيل] - Bot logs the searched queries in logger group.
+/get_log [رقمه] - Get log of your bot from heroku or vps. Works for both.
+/تلقائي [تفعيل|تعطيل] - البوت يطلع بعد 3 دقايق اذامافي احد بالمكالمة.
 
-📈**<u>STATS COMMANDS:</u>**
-/activevoice - Check active voice chats on bot.
-/activevideo - Check active video calls on bot.
+📈**احصائيات**
+/النشطة - يطلع لك المكالمات النشطة
 /stats - Check Bots Stats
 
-⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
-/blacklistchat [CHAT_ID] - Blacklist any chat from using Music Bot
-/whitelistchat [CHAT_ID] - Whitelist any blacklisted chat from using Music Bot
+⚠️**<u>القائمة السوداء:</u>**
+/السوداء [ايدي القروب] - اي قروب في السوداء ما يمديه يستخدم البوت
+/بيضاء [ايدي القروب] - Whitelist any blacklisted chat from using Music Bot
 /blacklistedchat - Check all blacklisted chats.
 
 👤**<u>BLOCKED FUNCTION:</u>**
