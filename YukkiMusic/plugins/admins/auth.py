@@ -93,7 +93,7 @@ async def auth(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(UNAUTH_COMMAND)
+    command(UNAUTH_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
