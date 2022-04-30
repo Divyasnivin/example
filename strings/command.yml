@@ -17,18 +17,18 @@ HELP_COMMAND : ["help", "الاوامر"]
 SETTINGS_COMMAND : ["تحكم", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
-STATS_COMMAND : ["احصائيات", "stat"]
+STATS_COMMAND : ["الاحصائيات", "stat"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "شغل", "شغل بالقناة", "فيديو", "تشغيل بالقناة", "/play", "/vplay", "cplay", "cvplay", "/شغل", "/تشغيل", "/تشغيل بالقناة", "/شغل بالقناة", "/فيديو", "تشغيل"]
 PLAYMODE_COMMAND : ["playmode"]
-CHANNELPLAY_COMMAND : ["ربط"]
+CHANNELPLAY_COMMAND : ["channelplay", "ربط"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["قائمتي"]
-DELETEPLAYLIST_COMMAND : ["حذف_قائمتي"]
+DELETEPLAYLIST_COMMAND : ["حذف قائمتي"]
 
 
 # Tools
@@ -39,14 +39,14 @@ LYRICS_COMMAND : ["lyrics"]
 
 # Admin Commands
 AUTH_COMMAND : ["رفع_ادمن"]
-UNAUTH_COMMAND : ["تنزيل_ادمن"]
+UNAUTH_COMMAND : ["تنزيل ادمن"]
 AUTHUSERS_COMMAND : ["الادمنية"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
+PAUSE_COMMAND : ["pause", "cpause", "مؤقت", "مؤقت بالقناة", "/pause", "/cpause", "/مؤقت", "/مؤقت بالقناة"]
+RESUME_COMMAND : ["resume", "cresume", "كمل", "كمل بالقناة", "/resume", "/cresume", "/كمل بالقناة", "كمل"]
+MUTE_COMMAND : ["mute", "cmute", "كتم", "كتم بالقناة", "/mute", "/cmute", "/كتم", "/كتم بالقناة"]
+UNMUTE_COMMAND : ["unmute", "cunmute", "الغاء الكتم", "الغاء الكتم بالقناة", "/unmute", "/cunmute", "/الغاء الكتم", "/الغاء الكتم بالقناة"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "وقف", "ايقاف بالقناة", "وقف بالقناة", "/ايقاف", "/وقف", "/end", "/stop", "/وقف بالقناة", "/ايقاف بالقناة", "/cend", "/cstop"]
+SKIP_COMMAND : ["skip", "cskip", "تخطي", "تخطي بالقناة", "/skip", "/cskip", "/تخطي", "/تخطي بالقناة"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
 LOOP_COMMAND : ["تكرار", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
@@ -55,8 +55,8 @@ RESTART_COMMAND : ["restart"]
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["رفع_مطور"]
-DELSUDO_COMMAND : ["تنزيل_مطور"]
+ADDSUDO_COMMAND : ["رفع مطور"]
+DELSUDO_COMMAND : ["تنزيل مطور"]
 SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
