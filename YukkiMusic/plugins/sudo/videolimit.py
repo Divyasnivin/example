@@ -9,7 +9,7 @@
 
 from pyrogram import filters
 from pyrogram.types import Message
-
+from strings.filters import command
 from strings import get_command
 from YukkiMusic import app
 from YukkiMusic.misc import SUDOERS
@@ -19,7 +19,7 @@ from YukkiMusic.utils.decorators.language import language
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
 
-@app.on_message(filters.command(VIDEOLIMIT_COMMAND) & SUDOERS)
+@app.on_message(command(VIDEOLIMIT_COMMAND) & SUDOERS)
 @language
 async def set_video_limit_kid(client, message: Message, _):
     if len(message.command) != 2:
