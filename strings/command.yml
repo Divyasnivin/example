@@ -21,7 +21,7 @@ STATS_COMMAND : ["الاحصائيات", "stat"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "شغل", "القناة شغل", "فيديو", "ش القناة شغل", "/play", "/vplay", "cplay", "cvplay", "/شغل", "/تشغيل", "/القناة تشغيل", "/القناة شغل", "/فيديو", "تشغيل"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "شغل", "القناة شغل", "فيديو", "ق القناة شغل", "/play", "/vplay", "cplay", "cvplay", "/شغل", "/تشغيل", "/القناة تشغيل", "/القناة شغل", "/فيديو", "تشغيل"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay", "ربط"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
