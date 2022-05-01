@@ -71,7 +71,7 @@ async def helpppgroup(client, message: Message, _):
         await update.reply_text(_["help_1"], reply_markup=keyboard)
 
 
-@app.on_message(filters.command("الاوامر", [".", ""]) & ~filters.edited)
+@app.on_message(filters.command("المساعدة", [".", ""]) & ~filters.edited)
 @languageCB
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
