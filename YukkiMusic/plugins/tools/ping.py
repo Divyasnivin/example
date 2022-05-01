@@ -8,7 +8,7 @@
 # All rights reserved.
 
 from datetime import datetime
-
+from strings.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -24,7 +24,7 @@ PING_COMMAND = get_command("PING_COMMAND")
 
 
 @app.on_message(
-    filters.command(PING_COMMAND)
+    command(PING_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
