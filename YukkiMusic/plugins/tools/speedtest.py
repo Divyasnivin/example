@@ -9,7 +9,7 @@
 
 import asyncio
 import os
-
+from strings.filters import command
 import speedtest
 import wget
 from pyrogram import filters
@@ -39,7 +39,7 @@ def testspeed(m):
     return result, path
 
 
-@app.on_message(filters.command(SPEEDTEST_COMMAND) & SUDOERS)
+@app.on_message(command(SPEEDTEST_COMMAND) & SUDOERS)
 async def speedtest_function(client, message):
     m = await message.reply_text("جاري اختبار سرعة التشغيل")
     loop = asyncio.get_event_loop()
