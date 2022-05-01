@@ -8,7 +8,7 @@
 # All rights reserved.
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
+from strings.filters import command
 from config import adminlist
 from strings import get_string
 from YukkiMusic import app
