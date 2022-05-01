@@ -30,7 +30,7 @@ from YukkiMusic.utils.inline.song import song_markup
 SONG_COMMAND = get_command("SONG_COMMAND")
 
 
-@app.on_message(command("حمل", [".", ""]) & ~filters.edited)
+@app.on_message(filters.command("حمل", [".", ""]) & ~filters.edited)
 @language
 async def song_commad_group(client, message: Message, _):
     #await message.delete()
