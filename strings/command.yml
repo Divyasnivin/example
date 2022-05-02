@@ -48,7 +48,7 @@ UNMUTE_COMMAND : ["unmute", "cunmute", "الغاء الكتم", "ق الغاء �
 STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "وقف", "ق ايقاف", "ق وقف", "/ايقاف", "/وقف", "/end", "/stop", "/ق وقف", "/ق ايقاف", "/cend", "/cstop"]
 SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي", "/skip", "/cskip", "/تخطي", "/ق تخطي"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["تكرار", "cloop"]
+LOOP_COMMAND : ["تكرار", "ق تكرار"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
