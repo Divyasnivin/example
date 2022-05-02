@@ -12,7 +12,8 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    await message.reply_caption(
+    await message.reply_text(
+        text=f"اوامر",
         caption=f""" — لاوامر التشغيل بالقروبات ⇐  ①\n\n — لاوامر التشغيل بالقناة  ⇐  ②""",
         reply_markup=InlineKeyboardMarkup(
             [
