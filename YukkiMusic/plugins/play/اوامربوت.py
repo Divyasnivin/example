@@ -11,9 +11,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & filters.group
     & ~filters.edited
 )
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/43c878e3954507d991e7d.jpg",
+async def khalid(client: Client, message: 
         caption=f""" — لاوامر التشغيل بالقروبات ⇐  ①\n\n — لاوامر التشغيل بالقناة  ⇐  ②""",
         reply_markup=InlineKeyboardMarkup(
             [
