@@ -23,4 +23,3 @@ async def khalid(client: Client, message:
                     
                                                  ],
             ]
-        ),
