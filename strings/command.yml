@@ -28,7 +28,7 @@ STREAM_COMMAND : ["stream", "cstream", "streamforce", "لايف", "ق لايف"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist", "قائمتي"]
-DELETEPLAYLIST_COMMAND : ["حذف قائمتي"]
+DELETEPLAYLIST_COMMAND : ["delplaylist", "حذف قائمتي"]
 
 
 # Tools
