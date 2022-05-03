@@ -14,7 +14,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/2148d414618ceb561f5fe.jpg",
-        caption=f"""-    Assistant  .""",
+        caption=f"""-    Assistant   @JBBBBF""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
