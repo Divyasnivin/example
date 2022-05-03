@@ -107,6 +107,6 @@ ACTIVEVC_COMMAND : ["النشطة"]
 ACTIVEVIDEO_COMMAND : ["activevideo"]
 
 #Gban Commands
-GBAN_COMMAND : [" عام"]
+GBAN_COMMAND : ["باند"]
 UNGBAN_COMMAND : ["فك"]
-GBANNED_COMMAND : ["قائمة العام"]
+GBANNED_COMMAND : ["المبندين"]
