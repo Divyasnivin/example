@@ -34,7 +34,7 @@ DELETEPLAYLIST_COMMAND : ["delplaylist", "حذف قائمتي"]
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
 SONG_COMMAND : ["song", "video"]
-LYRICS_COMMAND : ["lyrics"]
+LYRICS_COMMAND : ["كلمات"]
 
 
 # Admin Commands
