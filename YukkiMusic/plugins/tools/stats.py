@@ -10,7 +10,7 @@
 import asyncio
 import platform
 from sys import version as pyver
-
+from strings.filters import command
 import psutil
 from pyrogram import __version__ as pyrover
 from pyrogram import filters
@@ -46,7 +46,7 @@ STATS_COMMAND = get_command("STATS_COMMAND")
 
 
 @app.on_message(
-    filters.command(STATS_COMMAND)
+    command(STATS_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
@@ -64,7 +64,7 @@ async def stats_global(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(GSTATS_COMMAND)
+    command(GSTATS_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
