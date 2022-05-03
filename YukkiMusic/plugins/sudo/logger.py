@@ -8,7 +8,7 @@
 # All rights reserved.
 
 from pyrogram import filters
-
+from strings.filters import command
 import config
 from strings import get_command
 from YukkiMusic import app
@@ -20,7 +20,7 @@ from YukkiMusic.utils.decorators.language import language
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")
 
 
-@app.on_message(filters.command(LOGGER_COMMAND) & SUDOERS)
+@app.on_message(command(LOGGER_COMMAND) & SUDOERS)
 @language
 async def logger(client, message, _):
     usage = _["log_1"]
