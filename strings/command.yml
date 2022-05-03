@@ -27,7 +27,7 @@ CHANNELPLAY_COMMAND : ["channelplay", "ربط"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce", "لايف", "ق لايف"]
 
 #Playlists Command
-PLAYLIST_COMMAND : ["قائمتي"]
+PLAYLIST_COMMAND : ["playlist", "قائمتي"]
 DELETEPLAYLIST_COMMAND : ["حذف قائمتي"]
 
 
