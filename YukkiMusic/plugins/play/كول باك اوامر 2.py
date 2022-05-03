@@ -34,31 +34,26 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 
 @app.on_callback_query(filters.regex("ddd"))
-async def ddd(_, query: CallbackQuery):
+async def tt(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""\n\n╭── • [- 𝑺𝑶𝑼𝑹𝑪𝑬 𝑱𝑨𝑪𝑲 .](https://t.me/kbbbd) • ──╮\n\n""",
+       f"""\n\n 《`ق شغل`》《`ق تشغيل`》⇠ لتشغيل الاغاني فالقنوات\n\n《`ق مؤقت`》⇠ لتوقيف الاغنيه مؤقتا فالقنوات\n\n《`ق كمل`》⇠ لتكمله الاغنيه فالقنوات\n\n《`ق كتم`》⇠ لكتم صوت الاغنيه فالقنوات\n\n《`ق الغاء الكتم`》⇠ لالغاء الكتم الاغنيه فالقنوات\n\n《`ق تخطي`》⇠ لتخطي الاغنيه وتشغيل ما بعدها فالقنوات\n\n《`ق ايقاف`》او《`ق وقف`》⇠ لايقاف الاغاني    """,
        reply_markup=InlineKeyboardMarkup(
-          [
-               [
-                    InlineKeyboardButton(
-                        "- 𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑱𝑨𝑪𝑲 .", url=f"https://t.me/kbbbd"),
-                    InlineKeyboardButton(
-                        "- 𝑫𝑬𝑽 𝑱𝑨𝑪𝑲 .", url=f"https://t.me/t3ttt")
-                ],[
+            [
+                [
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data="back1"),
-               ],
+                        "رجوع", callback_data="back"),
+        ],
           ]
         ),
     )
 
 
-@app.on_callback_query(filters.regex("back1"))
-async def back1(_, query: CallbackQuery):
+@app.on_callback_query(filters.regex("back"))
+async def back(_, query: CallbackQuery):
    await query.edit_message_text(
-       f""" — لاوامر التشغيل بالقروبات  ⇐ ①\n\n — لاوامر التشغيل بالقناة     ⇐ ②""",
+       f""" — لاوامر التشغيل بالقروبات  ⇐ ①\n\n — لاوامر التشغيل بالقناة    ⇐ ②""",
        reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -66,7 +61,8 @@ async def back1(_, query: CallbackQuery):
                         "①", callback_data=f"tt"),
                     InlineKeyboardButton(
                         "②", callback_data=f"ddd"),
-                                ],
+                  
+                                   ],
             ]
         ),
-    )
+    ) 
