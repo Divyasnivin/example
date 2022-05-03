@@ -25,12 +25,12 @@ def start_pannel(_):
                 text=_["S_B_2"], callback_data="settings_helper"
             ),
         ],
-    ]
+    )
     InlineKeyboardButton(
-                        text=_["S_B_9"], callback_data="close"),
+         text=_["S_B_9"], callback_data="close"),
                 ),
         ],
-    ]
+    )
                     InlineKeyboardButton(
                         text=_["S_B_10"], callback_data="back"),
                     ),
