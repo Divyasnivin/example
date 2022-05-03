@@ -26,6 +26,13 @@ def start_pannel(_):
             ),
         ],
     ]
+    InlineKeyboardButton(
+                        text=_["S_B_9"], callback_data="close"),
+                    InlineKeyboardButton(
+                        text=_["S_B_10"], callback_data="back"),
+                    ),
+        ],
+    ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
