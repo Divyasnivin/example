@@ -20,9 +20,7 @@ def start_pannel(_):
         [
                       InlineKeyboardButton(
                         text=_["S_B_1"], callback_data=f"tt"),
-            ),
-                ]
-            )
+
     return buttons
             
             InlineKeyboardButton(
