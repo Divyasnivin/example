@@ -157,7 +157,7 @@ async def ping_com(client, message: Message, _):
             return
 
 
-@app.on_callback_query(filters.regex("GetTimer") & ~BANNED_USERS)
+@app.on_callback_query(regex("GetTimer") & ~BANNED_USERS)
 async def quite_timer(client, CallbackQuery: CallbackQuery):
     try:
         await CallbackQuery.answer()
@@ -165,7 +165,7 @@ async def quite_timer(client, CallbackQuery: CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("GetQueued") & ~BANNED_USERS)
+@app.on_callback_query(regex("GetQueued") & ~BANNED_USERS)
 @languageCB
 async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
