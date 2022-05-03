@@ -49,7 +49,7 @@ STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "وقف", "ق اي
 SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي", "/skip", "/cskip", "/تخطي", "/ق تخطي"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
 LOOP_COMMAND : ["تكرار", "ق تكرار"]
-SEEK_COMMAND : ["قدم", "ق قدم", "رجع", "ق رجع"]
+SEEK_COMMAND : ["seek" , "cseek" ,"قدم", "ق قدم", "رجع", "ق رجع"]
 RESTART_COMMAND : ["restart"]
 
 # Sudo Users Commaands
