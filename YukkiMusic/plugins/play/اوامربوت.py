@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["المكالمه","اوامر"])
+    command(["المكالمه","اوامر","اوامر المكالمه","المكالمة","])
     & filters.group
     & ~filters.edited
 )
