@@ -12,8 +12,8 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{PING_IMG_URL}",
+    await message.reply_text("تم تفعيل وضع الصيانة"
+                             )
         caption=f""" — لاوامر التشغيل بالقروبات ⇐  ①\n\n — لاوامر التشغيل بالقناة  ⇐  ②""",
         reply_markup=InlineKeyboardMarkup(
             [
