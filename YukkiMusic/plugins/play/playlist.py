@@ -9,7 +9,7 @@
 
 import os
 from random import randint
-
+from strings.filters import command
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
