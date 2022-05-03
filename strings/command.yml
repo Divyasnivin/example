@@ -14,7 +14,7 @@
 PING_COMMAND : ["ping", "البنق"]
 START_COMMAND : ["بدء", "start"]
 HELP_COMMAND : ["مساعدة", "الاوامر"]
-SETTINGS_COMMAND : ["تحكم", "setting"]
+SETTINGS_COMMAND : ["تحكم", "setting", "التحكم"]
 RELOAD_COMMAND : ["admincache", "ريلود"]
 GSTATS_COMMAND : ["عالمي"]
 STATS_COMMAND : ["الاحصائيات", "stats"]
