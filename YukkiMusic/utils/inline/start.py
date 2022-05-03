@@ -65,7 +65,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text=_["S_B_8"], callback_data=f"tt"),
             )
         ]
-    ]
+    )
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
