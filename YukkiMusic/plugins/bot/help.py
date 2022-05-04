@@ -25,13 +25,6 @@ from YukkiMusic.utils.inline.help import (help_back_markup,
 
 ### Command
 
-
-@app.on_message(
-    filters.command(HELP_COMMAND)
-    & filters.private
-    & ~filters.edited
-    & ~BANNED_USERS
-)
 @app.on_callback_query(
     filters.regex("settings_back_helper") & ~BANNED_USERS
 )
