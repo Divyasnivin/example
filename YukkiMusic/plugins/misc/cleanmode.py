@@ -34,7 +34,7 @@ BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
 AUTO_SLEEP = 5
 IS_BROADCASTING = False
-cleanmode_group = 15
+cleanmode_group = 46000
 
 
 @app.on_raw_update(group=cleanmode_group)
@@ -149,7 +149,7 @@ async def braodcast_message(client, message, _):
                 susr += 1
             except FloodWait as e:
                 flood_time = int(e.x)
-                if flood_time > 200:
+                if flood_time > 500:
                     continue
                 await asyncio.sleep(flood_time)
             except Exception:
@@ -178,7 +178,7 @@ async def braodcast_message(client, message, _):
                     sent += 1
                 except FloodWait as e:
                     flood_time = int(e.x)
-                    if flood_time > 200:
+                    if flood_time > 500:
                         continue
                     await asyncio.sleep(flood_time)
                 except Exception as e:
