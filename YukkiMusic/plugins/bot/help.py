@@ -9,7 +9,7 @@
 
 
 from typing import Union
-
+from strings.filters import command
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
@@ -29,7 +29,7 @@ HELP_COMMAND = get_command("HELP_COMMAND")
 
 
 @app.on_message(
-    filters.command(HELP_COMMAND)
+    command(HELP_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
