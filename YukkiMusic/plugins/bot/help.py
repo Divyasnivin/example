@@ -62,13 +62,6 @@ async def helper_private(
         keyboard = help_pannel(_)
         await update.reply_text(_["help_1"], reply_markup=keyboard)
 
-
-@app.on_message(
-    filters.command(HELP_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
 @LanguageStart
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
