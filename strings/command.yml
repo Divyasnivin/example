@@ -76,8 +76,8 @@ MAINTENANCE_COMMAND : ["الصيانة"]
 LOGGER_COMMAND : ["التسجيل"]
 
 #Heroku
-GETLOG_COMMAND : ["جلب الكوماند"]
-GETVAR_COMMAND : ["جلب الفار"]
+GETLOG_COMMAND : ["ggvar"]
+GETVAR_COMMAND : ["gvar"]
 DELVAR_COMMAND : ["dvar"]
 SETVAR_COMMAND : ["svar"]
 USAGE_COMMAND : ["الاستخدام"]
