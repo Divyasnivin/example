@@ -33,9 +33,7 @@ def setting_markup(_):
         [
             InlineKeyboardButton(
                 text=_["ST_B_5"], callback_data="PM"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_7"], callback_data="CM"
+"
             ),
         ],
         [
