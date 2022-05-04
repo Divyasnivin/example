@@ -9,7 +9,7 @@
 
 from pyrogram import filters
 from pyrogram.types import Message
-
+from strings.filters import command
 import config
 from strings import get_command
 from YukkiMusic import app
@@ -25,7 +25,7 @@ UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")
 AUTHORIZED_COMMAND = get_command("AUTHORIZED_COMMAND")
 
 
-@app.on_message(filters.command(AUTHORIZE_COMMAND) & SUDOERS)
+@app.on_message(command(AUTHORIZE_COMMAND) & SUDOERS)
 @language
 async def authorize(client, message: Message, _):
     if config.PRIVATE_BOT_MODE != str(True):
@@ -43,7 +43,7 @@ async def authorize(client, message: Message, _):
         await message.reply_text(_["pbot_5"])
 
 
-@app.on_message(filters.command(UNAUTHORIZE_COMMAND) & SUDOERS)
+@app.on_message(command(UNAUTHORIZE_COMMAND) & SUDOERS)
 @language
 async def unauthorize(client, message: Message, _):
     if config.PRIVATE_BOT_MODE != str(True):
@@ -61,7 +61,7 @@ async def unauthorize(client, message: Message, _):
         return await message.reply_text(_["pbot_4"])
 
 
-@app.on_message(filters.command(AUTHORIZED_COMMAND) & SUDOERS)
+@app.on_message(command(AUTHORIZED_COMMAND) & SUDOERS)
 @language
 async def authorized(client, message: Message, _):
     if config.PRIVATE_BOT_MODE != str(True):
