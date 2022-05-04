@@ -122,7 +122,7 @@ async def braodcast_message(client, message, _):
                 sent += 1
             except FloodWait as e:
                 flood_time = int(e.x)
-                if flood_time > 200:
+                if flood_time > 500:
                     continue
                 await asyncio.sleep(flood_time)
             except Exception:
