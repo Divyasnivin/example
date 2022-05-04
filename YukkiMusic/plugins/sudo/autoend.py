@@ -8,7 +8,7 @@
 # All rights reserved.
 
 from pyrogram import filters
-
+from strings.filters import command
 import config
 from strings import get_command
 from YukkiMusic import app
@@ -20,7 +20,7 @@ from YukkiMusic.utils.decorators.language import language
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
 
 
-@app.on_message(filters.command(AUTOEND_COMMAND) & SUDOERS)
+@app.on_message(command(AUTOEND_COMMAND) & SUDOERS)
 async def auto_end_stream(client, message):
     usage = "**الطريقة:**\n\n/تلقائي [تفعيل|تعطيل]"
     if len(message.command) != 2:
