@@ -65,7 +65,7 @@ BROADCAST_COMMAND : ["اذاعة"]
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["سوداء"]
 WHITELISTCHAT_COMMAND : ["بيضاء"]
-BLACKLISTEDCHAT_COMMAND : ["القائمة_السوداء"]
+BLACKLISTEDCHAT_COMMAND : ["القائمة السوداء"]
 
 # Video Calls Command
 VIDEOLIMIT_COMMAND : ["ضع حد للفيديو"]
@@ -78,8 +78,8 @@ LOGGER_COMMAND : ["التسجيل"]
 #Heroku
 GETLOG_COMMAND : ["جلب الكوماند"]
 GETVAR_COMMAND : ["جلب الفار"]
-DELVAR_COMMAND : ["حذف فار"]
-SETVAR_COMMAND : ["ضع فار"]
+DELVAR_COMMAND : ["dvar"]
+SETVAR_COMMAND : ["svar"]
 USAGE_COMMAND : ["الاستخدام"]
 VARS_COMMAND : ["vars", "config"]
 
