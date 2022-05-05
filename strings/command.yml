@@ -38,8 +38,8 @@ LYRICS_COMMAND : ["كلمات"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["رفع متحكم"]
-UNAUTH_COMMAND : ["تنزيل متحكم"]
+AUTH_COMMAND : ["متحكم"]
+UNAUTH_COMMAND : ["تمتحكم"]
 AUTHUSERS_COMMAND : ["المتحكمين"]
 PAUSE_COMMAND : ["pause", "cpause", "مؤقت", "ق مؤقت", "/pause", "/cpause", "/مؤقت", "/ق مؤقت"]
 RESUME_COMMAND : ["resume", "cresume", "كمل", "ق كمل", "/resume", "/cresume", "/ق كمل/", "كمل"]
@@ -55,8 +55,8 @@ RESTART_COMMAND : ["ريستارت"]
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["رفع مطور"]
-DELSUDO_COMMAND : ["تنزيل مطور"]
+ADDSUDO_COMMAND : ["رمطور"]
+DELSUDO_COMMAND : ["تمطور"]
 SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
