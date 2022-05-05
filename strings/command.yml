@@ -68,7 +68,7 @@ WHITELISTCHAT_COMMAND : ["بيضاء"]
 BLACKLISTEDCHAT_COMMAND : ["القائمة السوداء"]
 
 # Video Calls Command
-VIDEOLIMIT_COMMAND : ["حدفيديو"]
+VIDEOLIMIT_COMMAND : ["حد فيديو"]
 VIDEOMODE_COMMAND : ["ضع فيديو"]
 
 #Mantenance
@@ -91,7 +91,7 @@ AUTOEND_COMMAND : ["تلقائي"]
 
 #Private Bot Mode
 AUTHORIZE_COMMAND : ["السماح"]
-UNAUTHORIZE_COMMAND : ["بدوت سماح"]
+UNAUTHORIZE_COMMAND : ["بدون سماح"]
 AUTHORIZED_COMMAND : ["المسموحين"]
 
 #Block Users Command
