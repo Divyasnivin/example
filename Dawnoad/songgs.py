@@ -24,15 +24,10 @@ ydl_opts = {
     "quite": True,
 }
 
-#@Client.on_message(filters.command("ميرا", [".", ""]) & ~filters.edited)
-#async def ivo(client: Client, message: Message):
-   # m_reply = await message.reply_text(f"**لبيه {message.from_user.mention()}\n✯ اضغط /help عشان تشوف اوامري**")
-    #await m_reply_text("")
-
-@Client.on_message(command(["song", f"song@NKQBoT"]) & ~filters.edited)
+@Client.on_message(command(["song", f"song@Qznbot"]) & ~filters.edited)
 def songg(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("**✶ ابشر ثواني بس ..**")
+    m = message.reply("** ابشر ثواني ويتحمل ..**")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -45,10 +40,10 @@ def songg(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("**✶ ما لقيت اغنيه بهالعنوان\n✶ او انك ما كتبت اسم الاغنيه بشكل صحيح**")
+        m.edit("** ما في اغنية بالعنوان ذا\n او تأكد من العنوان**")
         print(str(e))
         return
-    m.edit("**✶ لقيت المطلوب ..**")
+    m.edit("**تم لقيت لك **")
     try:
         with yt_dlp.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -59,8 +54,8 @@ def songg(_, message):
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
-        m.edit("**✶ جاري ارسال الملف الصوتي ..**")
-        buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 𝗆𝗂𝗋𝖺", url="t.me/nvvvc")]]
+        m.edit("**ثواني وتنرسل الصوتية ..**")
+        buttons = [[InlineKeyboardButton("JACK", url="t.me/kbbbd")]]
         reply_markup = InlineKeyboardMarkup(buttons)
 
         message.reply_audio(
@@ -71,11 +66,11 @@ def songg(_, message):
             parse_mode="md",
             title=title,
             duration=dur,
-            performer="𝑴𝒊𝒓𝒂 𝑴𝒖𝒔𝒊𝒄 ♪"
+            performer="Jack"
         )
         m.delete()
     except Exception as e:
-        m.edit(" حدث خطا, قم بمراسلة مطور البوت")
+        m.edit("خطأ")
         print(e)
 
     try:
@@ -84,10 +79,10 @@ def songg(_, message):
     except Exception as e:
         print(e)
 
-@Client.on_message(filters.command("بحث", [".", ""]) & ~filters.edited)
+@Client.on_message(filters.command("صوت", [".", ""]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("**✶ ابشر ثواني بس ..**")
+    m = message.reply("**ابشر ثواني وتنرسل**")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -100,10 +95,10 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("**✶ ما لقيت اغنيه بهالعنوان\n✶ او انك ما كتبت اسم الاغنيه بشكل صحيح**")
+        m.edit("** ما في اغنية بالعنوان ذا\n او تأكد من العنوان**")
         print(str(e))
         return
-    m.edit("**✶ لقيت المطلوب ..**")
+    m.edit("**تم لقيت لك**")
     try:
         with yt_dlp.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -114,7 +109,7 @@ def song(_, message):
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
             secmul *= 60
-        m.edit("**✶ جاري ارسال الملف الصوتي ..**")
+        m.edit("**ثواني وتنرسل الصوتية**")
         buttons = [[InlineKeyboardButton("𝗌𝗈𝗎𝗋𝖼𝖾 𝗆𝗂𝗋𝖺", url="t.me/NvvvC")]]
         reply_markup = InlineKeyboardMarkup(buttons)
 
@@ -126,11 +121,11 @@ def song(_, message):
             parse_mode="md",
             title=title,
             duration=dur,
-            performer="𝑴𝒊𝒓𝒂 𝑴𝒖𝒔𝒊𝒄 ♪"
+            performer="Jack"
         )
         m.delete()
     except Exception as e:
-        m.edit(" حدث خطا, قم بمراسلة مطور البوت")
+        m.edit("خطأ")
         print(e)
 
     try:
@@ -141,7 +136,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["vsong", f"vsong@NKQBoT", "video", f"video@NKQBoT"]) & ~filters.edited
+    command(["vsong", f"vsong@Qznbot", "video", f"video@Qznbot"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
@@ -168,12 +163,12 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("**جاري تحميل الفيديو ...**")
+        msg = await message.reply("**ثواني جالس يتحمل**")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
-        return await msg.edit(f"🚫 **خطا:** {e}")
+        return await msg.edit(f"🚫 **حدث خطأ:** {e}")
     preview = wget.download(thumbnail)
     await msg.edit("**تاكيد التحميل ...**")
     await message.reply_video(
