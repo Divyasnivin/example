@@ -2,7 +2,7 @@ import sys
 from pyrogram import Client 
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from config import BOT_USERNAME, AMR_NAME, SUDO_USERS
+from config import BOT_USERNAME, bot_name, SUDO_USERS
 from driver.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from driver.decorators import authorized_users_only, sudo_users_only
