@@ -68,8 +68,8 @@ WHITELISTCHAT_COMMAND : ["بيضاء"]
 BLACKLISTEDCHAT_COMMAND : ["القائمة السوداء"]
 
 # Video Calls Command
-VIDEOLIMIT_COMMAND : ["ضع حد للفيديو"]
-VIDEOMODE_COMMAND : ["وضع الفيديو"]
+VIDEOLIMIT_COMMAND : ["حدفيديو"]
+VIDEOMODE_COMMAND : ["ضع فيديو"]
 
 #Mantenance
 MAINTENANCE_COMMAND : ["الصيانة"]
@@ -95,9 +95,9 @@ UNAUTHORIZE_COMMAND : ["بدوت سماح"]
 AUTHORIZED_COMMAND : ["المسموحين"]
 
 #Block Users Command
-BLOCK_COMMAND : ["حظر"]
-UNBLOCK_COMMAND : ["رفع"]
-BLOCKED_COMMAND : ["المحظورين"]
+BLOCK_COMMAND : ["بلوك"]
+UNBLOCK_COMMAND : ["ربلوك"]
+BLOCKED_COMMAND : ["المبلكين"]
 
 #sPEEDTEST
 SPEEDTEST_COMMAND : ["السرعة"]
@@ -108,5 +108,5 @@ ACTIVEVIDEO_COMMAND : ["activevideo"]
 
 #Gban Commands
 GBAN_COMMAND : ["باند"]
-UNGBAN_COMMAND : ["فك"]
+UNGBAN_COMMAND : ["رباند"]
 GBANNED_COMMAND : ["المبندين"]
