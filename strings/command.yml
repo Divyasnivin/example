@@ -43,7 +43,7 @@ UNAUTH_COMMAND : ["تمتحكم"]
 AUTHUSERS_COMMAND : ["المتحكمين"]
 PAUSE_COMMAND : ["pause", "cpause", "مؤقت", "ق مؤقت", "/pause", "/cpause", "/مؤقت", "/ق مؤقت"]
 RESUME_COMMAND : ["resume", "cresume", "كمل", "ق كمل", "/resume", "/cresume", "/ق كمل/", "كمل"]
-MUTE_COMMAND : ["mute", "cmute", "كتم", "ق كتم", "/mute", "/cmute", "/كتم", "/ق كتم"]
+MUTE_COMMAND : ["mute", "cmute", "اكتم", "ق اكتم", "/mute", "/cmute", "/اكتم", "/ق اكتم"]
 UNMUTE_COMMAND : ["unmute", "cunmute", "الغاء الكتم", "ق الغاء الكتم", "/unmute", "/cunmute", "/الغاء الكتم", "/ق الغاء الكتم"]
 STOP_COMMAND : ["stop", "end", "cstop", "cend", "ايقاف", "وقف", "ق ايقاف", "ق وقف", "/ايقاف", "/وقف", "/end", "/stop", "/ق وقف", "/ق ايقاف", "/cend", "/cstop"]
 SKIP_COMMAND : ["skip", "cskip", "تخطي", "ق تخطي", "/skip", "/cskip", "/تخطي", "/ق تخطي"]
@@ -55,8 +55,8 @@ RESTART_COMMAND : ["ريستارت"]
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["رمطور"]
-DELSUDO_COMMAND : ["تمطور"]
+ADDSUDO_COMMAND : ["رفع مطور"]
+DELSUDO_COMMAND : ["تنزيل مطور"]
 SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
