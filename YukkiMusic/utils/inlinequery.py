@@ -30,7 +30,7 @@ answer.extend(
             title="كتم للمكالمة",
             description=f"كتم الصوت في المكالمة.",
             thumb_url="https://telegra.ph/file/66516f2976cb6d87e20f9.png",
-            input_message_content=InputTextMessageContent("كتم"),
+            input_message_content=InputTextMessageContent("اكتم"),
         ),
         InlineQueryResultArticle(
             title="الغاء كتم المكالمة",
