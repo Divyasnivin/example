@@ -53,14 +53,16 @@ async def tt(_, query: CallbackQuery):
 @app.on_callback_query(filters.regex("back"))
 async def back(_, query: CallbackQuery):
    await query.edit_message_text(
-       f""" — لاوامر التشغيل بالقروبات  ⇐ ①\n\n — لاوامر التشغيل بالقناة    ⇐ ②""",
+       f""" — لاوامر التشغيل بالقروبات  ⇐ 1\n\n — لاوامر التشغيل بالقناة    ⇐ 2\n\nلاوامر المطورين ⇐ 3""",
        reply_markup=InlineKeyboardMarkup(
             [
                 [
                       InlineKeyboardButton(
-                        "①", callback_data=f"tt"),
+                        "1", callback_data=f"tt"),
                     InlineKeyboardButton(
-                        "②", callback_data=f"ddd"),
+                        "2", callback_data=f"ddd"),
+                  InlineKeyboardButton(
+                        "3", callback_data=f"abf"),
                   
                                    ],
             ]
