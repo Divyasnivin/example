@@ -14,14 +14,16 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/43c878e3954507d991e7d.jpg",
-        caption=f""" — لاوامر التشغيل بالقروبات ⇐  ①\n\n — لاوامر التشغيل بالقناة  ⇐  ②""",
+        caption=f""" — لاوامر التشغيل بالقروبات ⇐  1\n\n — لاوامر التشغيل بالقناة  ⇐  2""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                       InlineKeyboardButton(
-                        "①", callback_data=f"tt"),
+                        "1", callback_data=f"tt"),
                     InlineKeyboardButton(
-                        "②", callback_data=f"ddd"),
+                        "2", callback_data=f"ddd"),
+                    InlineKeyboardButton(
+                        "3", callback_data=f"abf"),
                     
                                                  ],
             ]
