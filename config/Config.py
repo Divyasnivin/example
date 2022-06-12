@@ -27,7 +27,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/Divyasnivin/example",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
@@ -37,10 +37,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "kbbbd")
-)  # Example:- https://t.me/TheYukki
+)
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "kbbbd")
-)  # Example:- https://t.me/YukkiSupport
+)
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
@@ -106,7 +106,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAAE-z8ix-ebgerK9nWjM00bUsG6fmE9O3_4GNZkdMpbY6M2oejHoZMzTWj8mmgWg3iaE59IZmoOM2mFfP64O8zGlU3M325CftkhwecSLPmm4Zva80K--GdrMXEbCPwSqjFfrucR1mWlOUHRJC2pzuhicIWq8OfCIIkKOg_KfnNANnv6slNwRLfK3TTwAbyovzcSQtm530k1j5tyBvP6OG76oa0GIjI6Yr7RcOrlUEyHSKuDs7I55-cMGp0cSw5YGe7xwCOf3QAmfBKp-xIA6-ez5UsuTRTRUnVPYnXEPc4mW8-fx3OTYHoLSD_5ZAAjDrCDGgW6yYff4O7o0DImGowyJvCIQgA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
