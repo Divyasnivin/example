@@ -56,9 +56,9 @@ class TeleAPI:
             file_name = file.file_name
             if file_name is None:
                 file_name = (
-                    "Telegram Audio File"
+                    "ملف صوت"
                     if audio
-                    else "Telegram Video File"
+                    else "ملف فيديو"
                 )
 
         except:
@@ -128,7 +128,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 Cancel Downloading",
+                                text="الغاء التحميل",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -147,14 +147,14 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} Telegram Media Downloader**
+**{MUSIC_BOT_NAME} جاري تحميل الملف **
 
-**Total FileSize:** {total_size}
-**Completed:** {completed_size} 
-**Percentage:** {percentage[:5]}%
+**مساحة الملف:** {total_size}
+**باقي:** {completed_size} 
+**النسبة:** {percentage[:5]}%
 
-**Speed:** {speed}/s
-**ETA:** {eta}"""
+**السرعة:** {speed}/s
+**الوقت:** {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
