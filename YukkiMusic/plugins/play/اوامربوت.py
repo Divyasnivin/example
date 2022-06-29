@@ -12,9 +12,9 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c25c2c5f335cf83db5df6.jpg",
-        caption=f""" — لاوامر التشغيل بالقروبات ⇐  1\n\n — لاوامر التشغيل بالقناة  ⇐  2\n\nلاوامر المطورين ⇐ 3""",
+    await message.reply_animation(
+        animation=f"https://te.legra.ph/file/63a87a670e29844da3b86.mp4",
+        caption=f""" — لاوامر التشغيل بالقروبات ⇐  1\n\n — لاوامر التشغيل بالقناة  ⇐  2""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -23,8 +23,6 @@ async def khalid(client: Client, message: Message):
                     InlineKeyboardButton(
                         "2", callback_data=f"ddd"),
                     InlineKeyboardButton(
-                        "3", callback_data=f"abf"),
-                    
                                                  ],
             ]
         ),
