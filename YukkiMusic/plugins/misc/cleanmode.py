@@ -32,7 +32,7 @@ from YukkiMusic.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
-AUTO_SLEEP = 5
+AUTO_SLEEP = 50000
 IS_BROADCASTING = False
 cleanmode_group = 46000
 
@@ -93,7 +93,7 @@ async def braodcast_message(client, message, _):
                 sent += 1
             except FloodWait as e:
                 flood_time = int(e.x)
-                if flood_time > 500:
+                if flood_time > 50000:
                     continue
                 await asyncio.sleep(flood_time)
             except Exception:
